@@ -30,29 +30,16 @@ To write a Python program that sorts a dictionary's:
 ---
 
 ## 🧪Program
-```
-def dictionairy(): 
-# Declaring hash function      
-key_value ={}    
-# Initializing the value 
-key_value[2] = 56       
-key_value[1] = 2 
-key_value[5] = 12 
-key_value[4] = 24 
-key_value[6] = 18      
-key_value[3] = 323 
-print ("Keys and Values sorted", 
-"in alphabetical order by the value") 
-# Note that it will sort in lexicographical order 
-# For mathematical way, change it to float 
-print(sorted(key_value.items(), key = 
-lambda kv:(kv[1], kv[0])))
+```input_dict = {2: 56, 1: 2, 5: 12, 4: 24, 6: 18, 3: 323}
+sorted_items = sorted(input_dict.items())
+print("Keys and Values sorted in alphabetical order by the key")
+for key, value in sorted_items:
+    print(f"({key}, {value})", end=' ')
 ```
 
 ## Sample Output
-![image](https://github.com/user-attachments/assets/45932426-e5fe-496b-8001-02e6108dcd2c)
-
+![image](https://github.com/user-attachments/assets/2d85ff10-b89a-4492-b181-ba987b141c80)
 
 ## Result
-Thus, the program has been successfully executed.
+thus code is executed successfully
 
