@@ -1,26 +1,48 @@
-# Exception Handling in Python: Avoiding Index Errors
+# Exception Operations And Its Functions
 
-## 🎯 Aim
-To write a Python program that handles an **IndexError** when trying to access an element beyond the available range of a list.
+## AIM:
+To write a python program for the solution of value error in exception handling and check whether the number is even or odd.
 
-## 🧠 Algorithm
-1. Define a list `list1` with some integer elements.
-2. Use a **try-except** block:
-   - In the `try` block, attempt to access an index that is out of range (e.g., `list1[5]`).
-   - In the `except` block, catch the error and print a custom message `"You're out of list range"`.
-3. Print the result based on whether the index access succeeds or fails.
+## ALGORITHM:
+1. Start
 
-## 🧾 Program
+2. Prompt the user to enter a number
+
+3. Try the following:
+
+   Convert the input to an integer and store it in variable x
+      
+   Check if x % 2 == 0:
+
+     If true, print "You entered even number"
+            
+     Else, print "An odd number"
+
+4. If an error occurs during conversion (i.e., the input is not a valid number):
+
+    Catch the ValueError exception
+    
+    Print "Enter only number"
+
+5. End.
+
+## PROGRAM:
 ```
-list1=[5, 10, 20] 
-try: 
-print(list1[5]) 
-except: 
-print("You're out of list range")
+
+try:
+    x=int(input())
+    if x%2==0:
+        print("You entered even number")
+    else:
+        print("An odd number")
+except ValueError:
+    print("Enter only number")
+
 ```
 
-## Output
-![image](https://github.com/user-attachments/assets/b69f836d-ca13-4e49-b220-5d459b4725ff)
+## OUTPUT:
 
-## Result
- Thus, the program has been successfully executed.
+![image](https://github.com/user-attachments/assets/8f9909e3-6574-4c45-9320-cb847699adea)
+
+## RESULT:
+The expected output is successfully executed.
